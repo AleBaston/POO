@@ -1,0 +1,70 @@
+a.
+/**Las correcciones para el A son:
+ * -falta el public para la definicion del método
+ * -por convencion todas las variables deben empezar con minuscula por más que sean 1 letra
+ * -el nombre del método debe ser reprentativo
+ * -Se debe separar las muestras en pantalla de los metodos
+ */
+void op1() {
+    int A = 5;
+    int B = 10;
+    int c = A + B;
+    System.out.println(c);
+}
+
+b. 
+/**Las correcciones para el B son:
+ * -Primero que nada las clases van con Mayúsculas
+ * -int x va en minusculas y cuando se lo llama en resultadoFinal X está en mayusculas, por lo que no lo reconocería.
+ */
+public class ejercicio {
+    public static void main(String[] args) {
+        int X = 10;
+        int y = 5;
+        int resultadoFinal = X + y;
+        System.out.println(resultadoFinal);
+    }
+}
+c.
+/**Las correcciones para el C son:
+ * -El void del método hacer es mejor cambiarlo por int y cuando se llama al método en main se imprima con SOUT()
+ * y a su vez hacer que retorne int r.
+ * -El nombre de las variables debe ser representativo
+ */
+public class Calculadora {
+    public static void main(String[] args) {
+        hacer(5, 3);
+    }   
+    public static void hacer(int a, int b) {
+        int r = a + b;
+        System.out.println(r);
+    }
+}
+
+d.
+/**Las correcciones para el D son:
+ * -Para una mejor legibilidad se recomienda dejar un "enter" entre cada varaible que se crea
+ * -Y dejar un espacio entre valor y operador
+ */
+public class Programa {
+    public static void main(String[] args) {
+        int a=5;int b=10;int c=a+b;System.out.println(c);
+    }
+}
+
+e.
+/**Las correcciones para el E son:
+ * -La clase Test debería comenzar con mayúscula
+ * -El nombre de las variables debe ser representativo
+ */
+public class test {
+    public static void main(String[] args) {
+        int n1 = 10;
+        int n2 = 20;
+        int r = sumar(n1,n2);
+        System.out.println("res:"+r);
+    }
+    public static int sumar(int a,int b){
+        return a+b;
+    }
+}

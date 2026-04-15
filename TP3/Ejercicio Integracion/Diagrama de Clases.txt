@@ -1,0 +1,40 @@
+@startuml
+
+class Televisor{
+    - marca: String
+    - modelo: String
+    - añoFabricacion: int
+    - pulgadas: int
+    - resolucion: String
+    - esSmart: boolean
+    - tipo: TipoTelevisor
+    - componentes: Componente[5]
+    - estaEncendido : boolean
+    - contador : int
+    + Televisor(marca : String,pulgada : int,resolucion : String,esSmart : EsSmart,añoFabricacion : String,modelo : String,tipoTelevisor : TipoTelevisor)
+    + imprimirInformacion() : void
+    + encender():void
+    + apagar():void
+    + agregarComponente(componente : Componente): void
+    + isEstaEncendido() : boolean
+}
+class Componente{
+    - estadoComponente : EstadoComponente
+    - tipoComponente : String
+    - costo : int
+    + cambiarValorComponente() : void
+}
+enum EstadoComponente{
+ nuevo
+ usado
+}
+enum TipoTelevisor{
+ Plasma
+ LCD
+ OLED
+}
+
+Televisor "1" o-- "1..*" Componente : posee
+Televisor ..> TipoTelevisor
+Componente ..>  EstadoComponente
+@enduml
