@@ -1,0 +1,56 @@
+Ejercicio 1
+
+-No conviene exponer los atributos por un tema de sensibilidad de la información, en la que
+puede ser perjudicante para el usuario que se conozca, en este caso cuánto gana.
+-Por otra parte, si el atributo saldo es publico yo podría modificarlo lo cuál no es un procedimiento
+correcto.
+
+Ejercicio 4
+
+-Decimos que es una interfaz es un contrato debido a que una vez se implementa está obligada la clase
+a agregar cada uno de sus métodos.
+
+Ejercicio 5
+
+-La principal diferencia entre los métodos es que uno se tiene que mostrar por pantalla desde el método
+propio y el otro se muestra en pantalla después de obtener el resutaldo en el main
+-si el valor de email es null en void mostrarEmail(); nos da null y en String obtenerEmail(); es vacio.
+-Para evitar los errores se pueden castear valores predeterminado para cuando no se ingresan
+
+Ejercicio 7
+
+-Se usan clases internas cuando la creacion de las clases depende puramente o existen solo si existe
+su clase padre.
+
+Ejercicio 10
+
+-Hay sobrecarga en el método imprimir ya que lo  pide 2 veces donde se distinguen por pedir 2 
+atributos distintos.
+-Hay sobrescritura de métodos cuando en ImpresoraColor se reemplaza el método de imprimir
+-Al ejecutar esa acción lo que se ocurre es que se va a mostrar es "Color: Hola"
+
+Ejercicio 11
+
+class Circulo extends Figura{
+	private double radio;
+	private String color;
+	public Circulo(double radio){
+		this.radio = radio;
+		this.color = "sin color"
+	}
+	public Circulo(double radio, String color){
+		this.radio = radio;
+		this.color = color;
+	@override
+	public double calcularArea(){
+		return Math.PI*radio*radio;
+	}
+}
+class Rectangulo extends Figura{
+	private double base;
+	private double altura;
+	@override
+	public double calcularArea(){
+		return base*altura;
+	}
+}
