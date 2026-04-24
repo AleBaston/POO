@@ -1,0 +1,24 @@
+Ejercicio 1
+
+-Caso 1:
+	historial de páginas visitadas: 
+	-En este caso si importa el orden cronologico para saber cuáles fueron las últimas busquedas.
+	-Si puede haber repetidos ya que puedo ingresar hoy a una página y mañana usar la misma.	
+	-Usaria List(ArrayList) ya que se ordenar según el ingreso de las páginas
+
+-Caso 2:
+	emails de usuarios registrados
+	-Utilizaria Set(HashSet), debido a que no importa en que orden se guardan mientras el dato exista.
+
+-Caso 3:
+	Una agenda donde se guarda: DNI → Nombre de la persona
+	-Utilizaria Map (HashMap), se utliza para guardar la clave valor de los objetos
+
+-Caso 4:
+	Una lista de alumnos en el orden en que se inscribieron.
+	-Utlizaria List(ArrayList), debido a que tiene un acceso a los índice más rápido.
+
+-Caso 5:
+	Un ranking de puntajes donde los valores deben estar ordenados automáticamente.
+	-Utilizaria Set(TreeSet), debido a que es un conjunto ordenado automaticamente.
+
